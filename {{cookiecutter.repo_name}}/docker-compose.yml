@@ -1,6 +1,6 @@
 version: '3'
 services:
-  weh:
+  web:
     build: .
     ports:
     - "6543:6543"
