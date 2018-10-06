@@ -29,7 +29,7 @@ tests_require = [
 
 setup(
     name='{{ cookiecutter.repo_name }}',
-    version='0.0',
+    version='0.1',
     description='{{ cookiecutter.project_name }}',
     long_description=README + '\n\n' + CHANGES,
     classifiers=[

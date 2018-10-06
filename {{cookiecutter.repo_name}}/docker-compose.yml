@@ -4,3 +4,5 @@ services:
     build: .
     ports:
     - "6543:6543"
+    volumes:
+    - ./{{ cookiecutter.repo_name }}:/usr/src/{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}
