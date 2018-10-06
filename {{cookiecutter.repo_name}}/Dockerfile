@@ -16,7 +16,7 @@ RUN pip install -e . && pip install -e ".[testing]"
 ADD development.ini /usr/src/{{ cookiecutter.repo_name }}/
 
 ADD {{ cookiecutter.repo_name }} /usr/src/{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}
-RUN initialize_crossref_tools_db development.ini
+RUN initialize_{{ cookiecutter.repo_name }}_db development.ini
 
 EXPOSE 6543
 CMD pserve development.ini --reload
