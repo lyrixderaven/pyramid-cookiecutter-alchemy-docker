@@ -1,0 +1,6 @@
+version: '3'
+services:
+  weh:
+    build: .
+    ports:
+    - "6543:6543"
